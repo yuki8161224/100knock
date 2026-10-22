@@ -13,14 +13,6 @@ Receiving objects: 100% (3/3), done.<br>
 (base) yukisekiya@yukinoMacBook-Air 100knock % git commit -m "README変更"<br>
 [main 9483700] README変更<br>
  1 file changed, 10 insertions(+), 1 deletion(-)<br>
-(base) yukisekiya@yukinoMacBook-Air 100knock % git push<br>
-Enumerating objects: 5, done.<br>
-Counting objects: 100% (5/5), done.<br>
-Delta compression using up to 8 threads<br>
-Compressing objects: 100% (2/2), done.<br>
-Writing objects: 100% (3/3), 518 bytes | 518.00 KiB/s, done.<br>
-Total 3 (delta 0), reused 0 (delta 0), pack-reused 0<br>
-To https://github.com/yuki8161224/100knock.git<br>
-   e2c67b8..9483700  main -> main<br>
+
 
 #commitID:e2c67b8b32a60f0d13fa9f2ff1604092d8835256
