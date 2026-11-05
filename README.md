@@ -1,4 +1,55 @@
 # 100knock
-# 課題10
-HTTPは、WebブラウザとWebサーバーがデータをやり取りするための通信プロトコルである。クライアントがリクエストを送り、サーバーがレスポンスを返す仕組みになっている。HTTP/1.1は普及基盤になっており、HTTP/2は通信の多重化によって効率を高め、HTTP/3はQUICを利用して通信の高速化や安定性の向上を図っている。HTTPSはHTTPをTLSで暗号化し、通信内容の盗聴や改ざんを防ぐ仕組みである。
+# 課題22
+<img src="02/images/img_22.png">
 
+# style.cssのコード
+<a href="02/style.css">
+ @charset "utf-8";
+
+ :root {
+  --main-color:rgb(255, 169, 215);
+  --sub-color: #fce4ec;
+  --text-color: #333333;
+}
+
+ .main-wrapper {
+     display: flex;
+     flex-direction: column;
+     gap: 50px;
+     background-color:var(--main-color);
+     padding: 50px;
+     height: 100vh;
+ }
+
+ .main-wrapper h1 {
+     padding-bottom: 20px;
+     border-bottom: #FFFFFF dotted 5px ;
+ }
+
+ .p-profile {
+     display: flex;
+ }
+
+ .p-profile img {
+     height: 300px;
+     width: 500px;
+     border-radius: 30px 0px 0px 30px;
+ }
+ .p-profile-content{
+    padding: 20px;
+    background-color: #FFFFFF;
+    border-radius: 0px 30px 30px 0px;
+ }
+
+ .p-profile-content h2{
+    padding-left: 20px;
+ }
+
+ .p-education-table {
+     border-collapse: collapse;
+ }
+
+ .p-education-table td {
+     padding: 10px 16px;
+     vertical-align: top;
+ }
