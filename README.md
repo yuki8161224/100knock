@@ -3,7 +3,7 @@
 <img src="02/images/img_22.png">
 
 # style.cssのコード
-<a href="02/style.css">
+<a href="02/style.css"></a>
  @charset "utf-8";
 
  :root {
