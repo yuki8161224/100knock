@@ -1,56 +1,44 @@
 # 100knock
-# 課題22
-<img src="02/images/img_22.png">
 
-# style.cssのコード
-<a href="02/style.css">style.css</a>
-<br>
- @charset "utf-8";
+# 課題36
+<img src="03/images/img_01.png">
+<img src="03/images/img_02.png">
 
- :root {
-  --main-color:rgb(255, 169, 215);
-  --sub-color: #fce4ec;
-  --text-color: #333333;
-}
+<p>textContentは文字をそのまま表示するが、innerHTMLはHTMLとして読み込むため、悪意のあるスクリプトを実行されるXSS攻撃の危険性がある。</p>
 
- .main-wrapper {
-     display: flex;
-     flex-direction: column;
-     gap: 50px;
-     background-color:var(--main-color);
-     padding: 50px;
-     height: 100vh;
- }
+# htmlのコード
+<a href="03/index.html"></a>
 
- .main-wrapper h1 {
-     padding-bottom: 20px;
-     border-bottom: #FFFFFF dotted 5px ;
- }
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>入力とDOMの書き換え</title>
+</head>
+<body>
 
- .p-profile {
-     display: flex;
- }
+    <h1>入力した文字を表示する</h1>
 
- .p-profile img {
-     height: 300px;
-     width: 500px;
-     border-radius: 30px 0px 0px 30px;
- }
- .p-profile-content{
-    padding: 20px;
-    background-color: #FFFFFF;
-    border-radius: 0px 30px 30px 0px;
- }
+    <input type="text" id="userInput" placeholder="文字を入力">
 
- .p-profile-content h2{
-    padding-left: 20px;
- }
+    <button id="changeBtn">表示する</button>
 
- .p-education-table {
-     border-collapse: collapse;
- }
+    <p id="msg">Hello</p>
 
- .p-education-table td {
-     padding: 10px 16px;
-     vertical-align: top;
- }
+    <script src="main.js"></script>
+</body>
+</html>
+
+ # main.js
+ <a href="03/main.js">main.js</a>
+
+
+const input = document.getElementById("userInput");
+const button = document.getElementById("changeBtn");
+const msg = document.getElementById("msg");
+
+button.addEventListener("click", function() {
+    const value = input.value;
+    msg.textContent = value;
+});
+
